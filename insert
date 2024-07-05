@@ -1,0 +1,23 @@
+-- 1. Insert minimal 3 data pengguna dengan peran yang berbeda
+INSERT INTO users (username, password, role) VALUES
+('Fidel', 'Fidel2020', 'Admin'),
+('iblay', 'iblay55', 'User'),
+('suparno', 'gegeracing', 'User');
+
+-- 2. Insert minimal 3 data profil pengguna
+INSERT INTO profil (user_id, full_name, birthdate, bio) VALUES
+(1, 'Fidelis kevin lino edo', '2004-04-16', 'Sang Pemikat Waria.'),
+(2, 'Iblay kang balap', '2009-03-11', 'Senggol bacok sia ku aing eak'),
+(3, 'Suparno Sitompul', '2000-12-12', 'halak batak disini, ada kasus jangan lari');
+
+-- 3. Insert minimal 3 data postingan
+INSERT INTO posts (user_id, title, content) VALUES
+(1, 'halo test ombak', 'mobil baru pasang turbo'),
+(2, 'cari lawan drag', 'vario spek 62 bebasan'),
+(3, 'cari guguk dulu ', 'makan daging guguk dengan sayur kol');
+
+-- 4. Insert minimal 3 data komentar
+INSERT INTO comments (post_id, user_id, comment_text) VALUES
+(1, 2, 'kenceng banget internal mobilnya'),
+(2, 1, 'yah vario butuh'),
+(3, 3, 'guguk guguk pada kabur semua');
